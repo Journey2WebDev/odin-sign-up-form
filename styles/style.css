@@ -18,6 +18,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   background-color: rgb(61, 61, 61);
+  
+  /* Custom Properties */
+  --bground-img-width: 667px;
 }
 
 body{
@@ -38,7 +41,7 @@ body{
 .lframe-banner{
   position: absolute;
   height: 100px;
-  width: 100%;
+  width: var(--bground-img-width);
   top: 150px;
   display: flex;
   justify-content: center;
@@ -57,7 +60,7 @@ body{
 .lframe-footer{
   position: absolute;
   height: 50px;
-  width: 100%;
+  width: var(--bground-img-width);
   bottom: 0;
   display: flex;
   justify-content: center;
