@@ -1,5 +1,10 @@
-/* Font that doesn't suck */
+/* Fonts that doesn't suck */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: retroFont;
+  src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
 
 /* Remove default padding and margin from all elements */
 *,
@@ -18,14 +23,54 @@ body{
   display: flex;
 }
 
+/*  */
+/* Left Side */
+/*  */
 .lframe{
-  border: 1px solid blue;
+  position: relative;
   height: 100vh;
   width: 40vw;
+  background-image: url("../images/PersonTorch_LinusSandvide.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
+.bground-banner{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: 175px;
+  left: 20%;
+  color: white;
+  font-weight:700;
+  font-size: 25px;
+  font-family: retroFont;
+  letter-spacing: 0.5em;
+}
+
+.bground-banner:content{
+  color: white;
+  font-weight:700;
+  font-size: 25px;
+}
+
+.bground-img-src{
+  position: absolute;
+  bottom: 20px;
+  right: 200px;
+  color: white;
+  opacity: .75;
+}
+
+.bground-img-src a{
+  color: rgb(200, 200, 200);
+}
+
+/*  */
+/* Right Side */
+/*  */
 .rframe-box{
-  border: 1px solid black;
+  border-top: 1px solid black;
   height: 33.3vh;
   width: 60vw;
   padding: 0 20px 0 20px;
