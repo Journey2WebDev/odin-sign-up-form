@@ -17,6 +17,7 @@
 :root{
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(61, 61, 61);
 }
 
 body{
@@ -29,18 +30,22 @@ body{
 .lframe{
   position: relative;
   height: 100vh;
-  width: 40vw;
+  width: max(40vw);
   background-image: url("../images/PersonTorch_LinusSandvide.jpg");
-  background-size: contain;
   background-repeat: no-repeat;
 }
 
-.bground-banner{
+.lframe-banner{
   position: absolute;
   height: 100px;
   width: 100%;
-  top: 175px;
-  left: 20%;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lframe-banner-text{
   color: white;
   font-weight:700;
   font-size: 25px;
@@ -48,23 +53,27 @@ body{
   letter-spacing: 0.5em;
 }
 
-.bground-banner:content{
-  color: white;
-  font-weight:700;
-  font-size: 25px;
+
+.lframe-footer{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bground-img-src{
-  position: absolute;
-  bottom: 20px;
-  right: 200px;
+.lframe-footer-text{
   color: white;
   opacity: .75;
 }
 
-.bground-img-src a{
-  color: rgb(200, 200, 200);
+.lframe-footer-text a{
+  color: rgb(231, 182, 133);
 }
+
+
 
 /*  */
 /* Right Side */
