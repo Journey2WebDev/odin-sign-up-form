@@ -17,7 +17,7 @@
 :root{
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  background-color: rgb(61, 61, 61);
+  color: white;
   
   /* Custom Properties */
   --bground-img-width: 667px;
@@ -81,10 +81,17 @@ body{
 /*  */
 /* Right Side */
 /*  */
+.rframe{
+  position: relative;
+  background-image: url("../accessory/CungeonDrawler/darkSand2.png");
+  background-repeat: repeat;
+}
+
+
 .rframe-box{
   border-top: 1px solid black;
   height: 33.3vh;
-  width: 60vw;
+  width: 63vw;
   padding: 0 20px 0 20px;
 }
 
@@ -109,6 +116,19 @@ body{
 
 
 
+/*  */
+/* Temp */
+/*  */
+.knight{
+  height: 150px;
+  width: auto;
+}
 
-
+.ui-border{
+  position: absolute;
+  bottom: 0;
+  /* left: -5px; */
+  height: 100%;
+  width: 100%;
+}
 
