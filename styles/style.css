@@ -18,7 +18,8 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: white;
-  
+  background-color: black;
+
   /* Custom Properties */
   --bground-img-width: 667px;
 }
@@ -34,7 +35,8 @@ body{
   position: relative;
   height: 100vh;
   width: max(40vw);
-  background-image: url("../images/PersonTorch_LinusSandvide.jpg");
+  width: 100%;
+  background-image: url("../images/PersonTorch_16bit.png");
   background-repeat: no-repeat;
 }
 
