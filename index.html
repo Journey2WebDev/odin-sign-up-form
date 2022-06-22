@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-Up Form</title>
   <link rel="stylesheet" href="./styles/style.css">
-  <script href="scripts/javascript.js" defer></script>
+  <script src="./scripts/javascript.js" defer></script>
 </head>
 
 <body>
@@ -16,7 +16,11 @@
     
     <div class="lframe-banner">
       <p class="lframe-banner-text">
-        Cungeon Drawler
+        <div id="leftLetter">D</div>
+        <div id="leftWords">ungeon</div>
+        <div id="rightLetter">C</div>
+        <div id="rightWords">rawler</div>
+        <!-- Cungeon Drawler -->
       </p>
     </div>
 
@@ -30,13 +34,23 @@
   <!-- Right Frame (3 horizontal boxes)-->
   <div class="rframe">
     <!-- UI Border... -->
-    <img src="./images/Frame.png" alt="Border" class="ui-border">
+    <!-- <img src="./images/Frame.png" alt="Border" class="ui-border"> -->
 
 
     <div class="rframe-box">
+
+      <br><br>
+      <button id="tempBtn">Start animation</button>
+      <br><br>
+
       Fight monsters. Collect gold. Gain levels. Choose abilities from skill tree. Procedurally generated dungeon maps for unique play experience each run. 100% free. Content updates made regularly.
       <br><br>
       Start your adventure today!
+      <br><br>
+      
+      <img src="./accessory/CungeonDrawler/Derived/Crafting-Mining.png" alt="mining seq" class="mining">
+
+
     </div>
 
     <div class="rframe-box">
@@ -82,10 +96,8 @@
     </div>
 
     <div class="rframe-box">
-      <button>Create Account</button>
+      <button>Register for the Closed Beta!</button>
       <p>Already have an account? <a href="#">Log in</a></p>
-      <br>
-      <img src="./accessory/CungeonDrawler/Items/knight.png" alt="Suit of armor" class="knight">
     </div>
   </div>
 

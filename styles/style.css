@@ -51,11 +51,25 @@ body{
 }
 
 .lframe-banner-text{
+  display: flex;
+  position: relative;
+}
+
+#leftLetter, #leftWords, #rightLetter, #rightWords{
   color: white;
   font-weight:700;
   font-size: 25px;
   font-family: retroFont;
   letter-spacing: 0.5em;
+  position: relative;
+}
+
+#leftLetter, #rightLetter{
+  transition: left 4s linear;
+}
+
+#leftWords{
+  margin-right: 2rem;
 }
 
 
@@ -129,8 +143,12 @@ body{
 .ui-border{
   position: absolute;
   bottom: 0;
-  /* left: -5px; */
   height: 100%;
   width: 100%;
+}
+
+.mining{
+  width: 400px;
+  height: auto;
 }
 
