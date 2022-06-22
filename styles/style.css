@@ -100,6 +100,7 @@ body{
 .rframe{
   position: relative;
   background-image: url("../accessory/CungeonDrawler/darkSand2.png");
+  /* background-color: white; */
   background-repeat: repeat;
 }
 
@@ -117,28 +118,35 @@ body{
   align-items: center;
 }
 
-.rframe-box2-lr{
-  display: flex;
-  height: 80%;
-  align-items: center;
-  gap: 30px;
+.spaceBtwnColumns{
+  padding: 0 15px;
 }
 
-.rframe-box2-left, .rframe-box2-right{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+input {
+  border: 2px solid #000;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
 }
+
+input:invalid{
+  border-color: red;
+}
+
+input:valid{
+  border-color: green;
+}
+
+input:focus{
+  box-shadow: 2px 1px 2px rgb(255, 255, 255);
+}
+
 
 
 
 /*  */
 /* Temp */
 /*  */
-.knight{
-  height: 150px;
-  width: auto;
-}
 
 .ui-border{
   position: absolute;

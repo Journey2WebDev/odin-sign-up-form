@@ -1,7 +1,6 @@
 
 
-
-// Swap initial letters of title
+// Animation to swap initial letters of title
 function swapLetters(){
   console.log("Function started");
   let leftLetter = document.getElementById("leftLetter");
@@ -19,6 +18,12 @@ function swapLetters(){
   rightLetter.style.left = -diff + "px";
 };
 
-let startBtnEle = document.getElementById("tempBtn");
-startBtnEle.addEventListener("click",swapLetters);
+// Waits 1 second after page loag to run animation
+// without setTimeout, animation does not fully complete (reason unknown)
+window.onload = function() {
+  setTimeout(function(){
+    swapLetters();
+  } ,1000);
+};
+
 
